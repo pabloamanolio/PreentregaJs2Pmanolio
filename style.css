@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-rows: auto 1fr; 
+    height: 100vh;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.container {
+    display: grid ;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    justify-content: center;
+    align-items: start; 
+    padding: 20px;
+}
+
+.card {
+    grid-row: 2;
+    width: 50%; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+form {
+    grid-column: 2 / span 2 ;
+    grid-row: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+#altura {
+
+    grid-column: 2 / span 2 ; 
+    grid-row: 3;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+#devolucionAltura {
+    grid-row: 3;
+    grid-column: 4;
+    width: 50%; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.addToCartButton {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
